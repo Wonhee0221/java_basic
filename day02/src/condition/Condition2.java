@@ -13,6 +13,6 @@ public class Condition2 {
             case 4:
                 System.out.println("D");
             default: break;
-        };
+        }
     }
 }
