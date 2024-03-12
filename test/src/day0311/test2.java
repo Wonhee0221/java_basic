@@ -1,29 +1,27 @@
 package day0311;
 
-import java.util.HashSet;
 import java.util.Random;
-import java.util.Set;
 
 public class test2 {
     public static void main(String[] args) {
-        // 로또 번호 6개를 발생시키고 저장할 Set 생성
-        Set<Integer> lottoNumbers = generateLottoNumbers();
-
-        // 발생시킨 로또 번호 출력
-        System.out.println("로또 당첨 번호: " + lottoNumbers);
-    }
-
-    private static Set<Integer> generateLottoNumbers() {
-        Set<Integer> lottoNumbers = new HashSet<>();
         Random random = new Random();
-
-        // 6개의 로또 번호를 발생시키기
-        while (lottoNumbers.size() < 6) {
+        boolean[] useNum = new boolean[46];
+        int[] lottoNumbers = new int[6];
+        int i = 0;
+        while (i < 6) {
             int randomNumber = random.nextInt(45) + 1; // 1부터 45까지의 난수 발생
-            lottoNumbers.add(randomNumber);
+            if (!useNum[randomNumber]) {
+                lottoNumbers[i] = randomNumber;
+                useNum[randomNumber] = true;
+                i++;
+            }
         }
 
-        return lottoNumbers;
+        // 발생시킨 로또 번호 출력
+        System.out.print("로또 당첨 번호: ");
+        for (int number : lottoNumbers) {
+            System.out.print(number + " ");
+        }
     }
 }
 //2번 문제 - 로또 번호 발생기
