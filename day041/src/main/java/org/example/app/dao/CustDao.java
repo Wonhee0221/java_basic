@@ -10,7 +10,8 @@ public class CustDao implements Dao<String, CustDto> {
 
     @Override
     public int insert(CustDto custDto) {
-        System.out.println("Oracle DB : Inserted..." + custDto);
+        System.out.println("Duplicated ID Exception..."); // 문제발생 상황.
+        //System.out.println("Oracle DB : Inserted..." + custDto);
         return 0;
     }
 
