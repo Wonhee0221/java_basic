@@ -16,11 +16,11 @@ public class Main {
         CustDto custDto = new CustDto().builder().id("id01").pwd("pwd01").name("james").build();
         service.add(custDto);
 
-        List<CustDto> list = null;
-        list = service.get();
-        for(CustDto cust: list){
-            System.out.println(cust);
-        }
+//        List<CustDto> list = null;
+//        list = service.get();
+//        for(CustDto cust: list){
+//            System.out.println(cust);
+//        }
 
         Service<Long, ItemDto> service2;
         service2 = new ItemService();

@@ -12,7 +12,6 @@ public class test7 {
         }
 
         int prev = 0;
-        int b = 0;
         int sum = 0;
         for (int i=1; i<=num; i++){
             prev = prev+i;
