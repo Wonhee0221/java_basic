@@ -4,17 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="externalProjectPath" value="$USER_HOME$/Desktop/test" />
-        <option name="modules">
-          <set>
-            <option value="$USER_HOME$/Desktop/test" />
-            <option value="$USER_HOME$/Desktop/test/src" />
-            <option value="$USER_HOME$/Desktop/test/src/main" />
-            <option value="$USER_HOME$/Desktop/test/src/main/mysql" />
-          </set>
-        </option>
-      </GradleProjectSettings>
-      <GradleProjectSettings>
         <option name="delegatedBuild" value="false" />
         <option name="testRunner" value="PLATFORM" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/day041" />
@@ -61,6 +50,17 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/day07" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/test" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/test" />
+            <option value="$PROJECT_DIR$/test/src" />
+            <option value="$PROJECT_DIR$/test/src/main" />
+            <option value="$PROJECT_DIR$/test/src/main/mysql" />
           </set>
         </option>
       </GradleProjectSettings>
